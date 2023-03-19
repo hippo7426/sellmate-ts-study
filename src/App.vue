@@ -1,16 +1,16 @@
 <template>
   <div>
-    <WordChain />
+    <Lotto />
   </div>
 </template>
 
 <script lang="ts">
 import { defineComponent } from 'vue';
-import WordChain from './components/mini_games/WordChain.vue'
+import Lotto from './components/mini_games/Lotto.vue';
 
 export default defineComponent({
   components:{
-    WordChain,
+    Lotto
   },
   setup(){
     return {
