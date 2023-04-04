@@ -1,6 +1,6 @@
 <template>
   <div>
-    <RockScissorPaper />
+    <TicTacToe />
   </div>
 </template>
 
@@ -8,9 +8,11 @@
 import { defineComponent } from 'vue';
 import Lotto from './components/mini_games/Lotto.vue';
 import RockScissorPaper from './components/mini_games/RockScissorPaper.vue'
+import TicTacToe from './components/mini_games/TicTacToe.vue';
+
 export default defineComponent({
   components:{
-    RockScissorPaper
+    TicTacToe,
   },
   setup(){
     return {
