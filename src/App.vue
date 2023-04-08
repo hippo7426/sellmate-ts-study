@@ -1,18 +1,16 @@
 <template>
   <div>
-    <TicTacToe />
+    <CardMatching />
   </div>
 </template>
 
 <script lang="ts">
 import { defineComponent } from 'vue';
-import Lotto from './components/mini_games/Lotto.vue';
-import RockScissorPaper from './components/mini_games/RockScissorPaper.vue'
-import TicTacToe from './components/mini_games/TicTacToe.vue';
+import CardMatching from './components/mini_games/CardMatching.vue'
 
 export default defineComponent({
   components:{
-    TicTacToe,
+    CardMatching
   },
   setup(){
     return {
