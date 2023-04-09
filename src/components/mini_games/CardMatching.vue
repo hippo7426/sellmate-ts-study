@@ -48,7 +48,6 @@ export default {
     let canClick = true
     let clickCount = 0;
 
-    // shuffle the cards
     const shuffleCards = () => {
       const cards = generateRandomCards()
       const shuffledCardSrc = [...cards, ...cards].sort(() => Math.random() - 0.5)
@@ -60,21 +59,17 @@ export default {
       numMatchedCards.value = 0
     }
 
-    // flip a card
     const flipCard = (card: Card) => {
       if (!canClick || card.flipped) return
     
       clickCount++;
       if (flippedCard.value) {
-        // check for a match
         if (flippedCard.value.id === card.id) {
-          // match
           card.flipped = true
           flippedCard.value.flipped = true
           flippedCard.value = null
           numMatchedCards.value += 2
         } else {
-          // not a match
           card.flipped = true
           canClick = false
           setTimeout(() => {
@@ -85,7 +80,6 @@ export default {
           }, 1000)
         }
       } else {
-        // first card flipped
         card.flipped = true
         flippedCard.value = card
       }
