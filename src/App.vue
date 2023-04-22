@@ -1,16 +1,16 @@
 <template>
   <div>
-    <CardMatching />
+    <LadderGame />
   </div>
 </template>
 
 <script lang="ts">
 import { defineComponent } from 'vue';
-import CardMatching from './components/mini_games/CardMatching.vue'
+import LadderGame from './components/mini_games/LadderGame.vue';
 
 export default defineComponent({
   components:{
-    CardMatching
+    LadderGame
   },
   setup(){
     return {
